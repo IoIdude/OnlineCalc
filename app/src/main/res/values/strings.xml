@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OnlineCalc</string>
+    <string name="favorites">home</string>
+    <string name="home">home</string>
+    <string name="index">index</string>
+    <string name="result">result</string>
+    <string name="index1">Представляет собой значение по оценке степени соответствия массы тела человека и роста (длины тела), в результате определения индекса можно косвенно судить о том, что масса тела находится в пределах нормы или недостаточна или наоборот избыточная масса тела. представляет собой значение по оценке степени соответствия массы тела человека и роста (длины тела), в результате определения индекса можно косвенно судить о том, что масса тела находится в пределах нормы или недостаточна или наоборот избыточная масса тела.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

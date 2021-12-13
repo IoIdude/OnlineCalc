@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Index">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/lable"
+                android:text="Возраст"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1"
+                />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="10sp"
+                android:maxLength="3" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/gerb"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/gerb"
+        app:layout_constraintVertical_bias="0" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TableRow>
+            <Button
+                android:id="@+id/index1"
+                android:onClick="onClickMe"
+                android:text="Индекс массы тела (кг/м2)"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/index2"
+                android:onClick="onClickMe"
+                android:text="Уровень двигательной активности\n(число шагов в сутки)"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/index3"
+                android:onClick="onClickMe"
+                android:text="Коэффициент выносливости (усл. ед.)"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/index4"
+                android:onClick="onClickMe"
+                android:text="Уровень регуляции сердечно-сосудистой системы"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/index5"
+                android:onClick="onClickMe"
+                android:text="Жизненный индекс (мл/кг)"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/index6"
+                android:onClick="onClickMe"
+                android:text="Циркулярно-респираторный коэффициент Скибински (усл. ед.)"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/index7"
+                android:onClick="onClickMe"
+                android:text="Вегетативный индекс Кердо (усл. ед)"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/index8"
+                android:onClick="onClickMe"
+                android:text="Индекс функциональных изменений"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:text="Начать"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="onClickMe"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TableRow>
+
+            <ImageButton
+                android:onClick="onClickMe"
+                android:id="@+id/home" android:src="@drawable/ic_baseline_home_24"/>
+            <ImageButton
+                android:onClick="onClickMe"
+                android:id="@+id/index" android:src="@drawable/ic_baseline_calculate_24"/>
+            <ImageButton
+                android:onClick="onClickMe"
+                android:id="@+id/res" android:src="@drawable/ic_baseline_mobile_friendly_24"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
